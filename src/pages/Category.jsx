@@ -60,7 +60,6 @@ function Category() {
     fetchListings();
   }, [params.categoryName]);
 
-
   // Pagination / Load more listings
   const onFetchMoreListings = async () => {
     try {
@@ -123,7 +122,7 @@ function Category() {
               ))}
             </ul>
           </main>
-
+          {/* add functionality to only show Load More <p> if there are more to add */}
           <br />
           <br />
           {lastFetchedListing && (
